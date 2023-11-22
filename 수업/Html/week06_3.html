@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webform</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid rgb(117, 117, 117);
+            padding: 5px;
+        }
+        td.fldName {
+            width: 150px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h4>2023학년도 프론트엔드프로그래밍I</h4>
+    <h1>Webform Test</h1>
+    <hr>
+    <!--웹에서 입력받은 정보를 보내는 주소-->
+    <form action="http://pshonature.dothome.co.kr/postResponse.php" method="post"> 
+       <table>
+            <!-- ------------THEAD-------------- -->
+            <thead>
+                <tr>
+                    <th class="fldName">항목명</th>
+                    <th>항목 입력</th>
+                </tr>
+            </thead>
+            <!-- ------------TBODY-------------- -->
+            <tbody>
+                <tr>
+                    <td class="fldName">Name : </td>
+                    <td><input type="text" name="name" size="30" placeholder="이름은 영어로 입력하세요." value="정진우"></td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">E-Mail : </td>
+                    <td><input type="text" name="email" size="40" value="dangerousmanjinwoo@naver.com"></td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">Phone : </td>
+                    <td><input type="tel" name="phone" size="15" placeholder="010-1234-5678"></td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">Birth Date : </td>
+                    <td><input type="date" name="birthdate" value="2023-04-11"></td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">Password : </td>
+                    <td><input type="password" name="password" size="30"></td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">Confirm Password : </td>
+                    <td><input type="password" name="password2" size="30"></td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">학 년 : </td>
+                    <td>
+                        <label><input checked type="radio" name="grade" value="1학년"> 1학년</label>
+                        <label><input type="radio" name="grade" value="2학년"> 2학년</label>
+                    </td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">반 : </td>
+                    <td>
+                        <label><input checked type="radio" name="ban" value="1반"> 1반</label>
+                        <label><input type="radio" name="ban" value="2반"> 2반</label>
+                    </td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">좋아하는 색 : </td>
+                    <td>
+                        <input type="color" name="favcolor" value="#FF0000"
+                        onchange="document.body.style.backgroundColor=this.value;"
+                        >
+                    </td>
+                </tr>
+            <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">라이프가이드 교수 : </td>
+                    <td>
+                        <select name="lgprof">
+                            <option value="허봉식">허봉식</option>
+                            <option selected value="김진숙">김진숙</option>
+                        </select>
+                    </td>
+                </tr>
+            <!-- ------------------------------- -->
+            <tr>
+                <td class="fldName">수강과목 : </td>
+                    <td>
+                        <label><input checked type="checkbox" name="subjects[]" value="프론트엔드프로그래밍I">프론트엔드프로그래밍I<br></label>
+                        <label><input type="checkbox" name="subjects[]" value="C프로그래밍">C프로그래밍<br></label>
+                        <label><input type="checkbox" name="subjects[]" value="사물인터넷프로그래밍">사물인터넷프로그래밍<br></label>
+                        <label><input type="checkbox" name="subjects[]" value="인공지능입문">인공지능입문<br></label>
+                        <label><input disabled type="checkbox" name="subjects[]" value="컴퓨터구조">컴퓨터구조<br></label>
+                        <label><input type="checkbox" name="subjects[]" value="라이프가이드">라이프가이드<br></label>
+                        <label><input type="checkbox" name="subjects[]" value="커뮤니케이션영어">커뮤니케이션영어<br></label>
+                        <label><input type="checkbox" name="subjects[]" value="초보자도 할 수 있는 인공지능">초보자도 할 수 있는 인공지능<br></label>
+                    </td>
+                </tr>
+            <!-- ------------------------------- -->
+            <tr>
+                    <td class="fldName">추천 점심 메뉴 : </td>
+                    <td>
+                        <input type="text" name="lunchmenu" list="menulist">
+                        <datalist id="menulist">
+                            <option value="돈까스"></option>
+                            <option value="삼각김밥"></option>
+                            <option value="삼겹살"></option>
+                            <option value="라면"></option>
+                            <option value="라볶이"></option>
+                            <option value="제육덮밥"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName">메모 : </td>
+                    <td>
+                        <textarea name="memo" cols="80" rows="10"></textarea>
+                    </td>
+                </tr>
+                <!-- ------------------------------- -->
+                <tr>
+                    <td class="fldName"> </td>
+                    <td><input type="submit"></td>
+                </tr>
+            <!-- ------------------------------- -->
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

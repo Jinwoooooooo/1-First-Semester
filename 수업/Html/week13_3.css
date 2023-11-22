@@ -1,0 +1,65 @@
+@import url(spring.css);
+
+* {
+    margin: 0 auto;
+}
+header {
+    /* --bgheader: rgb(153, 64, 64); */
+    display: flex;
+    height: var(--headerheight);
+    background-color: var(--bgheader);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    height: var(--mainheight);
+    background-color: var(--bgmain);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+}
+header h1 {
+    color: var(--txth1);
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Alfa Slab One', cursive;
+}
+header h2 {
+    color: var(--txth2);
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: 'Alfa Slab One', cursive;
+}
+h4 {
+    display: inline;
+    font-size: 15px;
+}
+nav {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-align: left;
+    color: #E05A12;;
+    font-weight: bold;
+    font-size: 10px;
+}
+main h2 {
+    color: #472CBC;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Alfa Slab One', cursive;
+}
+main p {
+    font-family: 'Roboto', sans-serif;
+}
+span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}

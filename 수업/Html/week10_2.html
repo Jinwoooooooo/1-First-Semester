@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contanier {
+            display: block;
+            width: 80%;
+            padding: 20px;
+            border: 3px solid black;
+            margin-bottom: 20px;
+        }
+        .blockbox {
+            display: block;
+            width: 18%;
+            border: 5px solid red;
+            padding: 5px;
+            margin-top: 15px;
+        }
+        .inlinebox {
+            display: inline;
+            border: 5px ridge blue;
+            padding: 5px;
+            margin-right: 15px;
+        }
+        .inblbox {
+            display: inline-block;
+            border: 5px solid green;
+            padding: 5px;
+            width: 150px;
+            height: 100px;
+            background-color: rgba(47, 255, 127, 0.705);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : Display</h1>
+    <hr>
+    <div class="contanier">
+        <h5>Display : Block (Class : Blockbox)</h5>
+        <hr>
+        <div class="blockbox">Class Blockbox 1</div>
+        <div class="blockbox">Class Blockbox 2</div>
+        <div class="blockbox">Class Blockbox 3</div>
+    </div>
+    <div class="contanier">
+        <h5>Display : Inline (Inlinebox)</h5>
+        <hr>
+        <div class="inlinebox">Class Inlinebox 1</div>
+        <div class="inlinebox">Class Inlinebox 2</div>
+        <div class="inlinebox">Class Inlinebox 3</div>
+    </div>
+    <div class="contanier">
+        <h5>Display : Inline-block (Inlineblock)</h5>
+        <hr>
+        첫 번째 박스:<div class="inblbox">Inline-block box 1</div>
+        두 번째 박스:<div class="inblbox">Inline-block box 2</div>
+        세 번째 박스:<div class="inblbox">Inline-block box 3</div>
+    </div>
+</body>
+</html>

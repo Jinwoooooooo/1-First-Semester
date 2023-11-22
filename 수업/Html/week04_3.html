@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Table 연습</title>
+        <style>
+            /* 여기는 CSS 영역이므로 코멘트 태그도 html 영역과 다름 */
+            table {
+                width: 50%;
+            }
+            table, th, td {
+                border: 1px solid gray;
+                border-collapse: collapse;
+            }
+        </style>
+    <body>
+        <h1>Table 만들기</h1>
+        <hr>
+        <table>
+            <caption>나라별 수도, 대표 음식</caption>
+            <!-- 표 제목 줄 영역 -->
+            <thead>
+                <tr> <!--줄-->
+                    <th>국명</th>
+                    <th>Korea</th>
+                    <th>China</th>
+                    <th>Japan</th>
+                </tr>
+            </thead>
+            <!-- 표 내용 줄 영역 -->
+            <tbody>
+                <tr>
+                    <th>수도</th>
+                    <td>Seoul</td> <!--칸-->
+                    <td>Beijing</td>
+                    <td>Tokyo</td>
+                </tr>
+            </tbody>
+            <!-- 표 바닥줄 줄 영역 -->
+            
+            <tfoot>
+                <tr>
+                    <th rowspan="2">대표 음식</th> <!--아래로 ?칸 합치기-->
+                    <td>Kimchi</td>
+                    <td>Dimsum</td>
+                    <td>Sushi</td>
+                <tr>
+                    <td>Bibimbap</td>
+                    <td colspan="2">Beijingduck, Sukiyaki</td> <!--오른쪽으로 ?칸 합치기-->
+                    <!-- <td>Sukiyaki</td> -->
+                </tr>
+            </tfoot>
+  
+         
+        </table>
+
+    </body>
+    </head>
+</html>

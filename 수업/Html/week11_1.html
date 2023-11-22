@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rspan {
+            border: 1px solid crimson;
+            position: relative;
+            /* top: -10px;
+            left: -10px; */
+            right: 10px;
+            bottom: 10px;
+        }
+        #aspan {
+            border: 1px solid lawngreen;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #fspan {
+            border: 1px solid rgb(119, 112, 218);
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+        }
+        img {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>position 연습</h1>
+    <hr>
+    <img src="button.jfif" width="200px">
+    <img src="button.jfif" width="200px">
+    <hr>
+    <h2>position: relative</h2>
+    <p>position 속성값을 <span id="rspan"">relative</span>로 설정하면, 웹브라우저가 기본적으로 position 값으로
+        설정한 static 상태의 위치가 기준점이 되어 그 위치에서의 상대적(relative) 위치값
+        을 지정한다.
+    </p>
+    <h2>position: absoulte</h2>
+    <p>
+        position 속성값을 <span id="aspan"">absoulte</span>로 설정하면, 웹브라우저 웹문서의 좌측 상단
+        을 기준으로 한 위치가 설정이 된다.(left, top, right, bottom)
+    </p>
+    <h2>position: fixed</h2>
+    <p>
+        position 속성값을 <span id="fspan"">fixed</span>로 설정하면, 웹브라우저 화면을
+        기준으로 위치가 설정이 된다.(left, top, right, bottom)
+    </p>
+</body>
+</html>

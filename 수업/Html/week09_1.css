@@ -1,0 +1,18 @@
+h1 {
+    color: rgb(71, 0, 153);
+}
+h2 {
+    color: rgb(203, 240, 255);
+}
+h3 {
+    color: rgb(80, 80, 80);
+}
+.classnumber {
+    color: darkorchid;
+}
+li.phone {
+    color: rgb(226, 43, 171);
+}
+#profphone {
+    color: cornflowerblue;
+}

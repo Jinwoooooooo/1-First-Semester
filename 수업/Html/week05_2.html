@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe Test</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, tr, td {
+            border: 1px dotted gray;
+        }
+        #Contents {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>IFrame Test</h1>
+    <hr>
+    <table>
+            <tr>
+                <td id="Contents">
+                    <h3>Contents</h3>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="week05_1.html" target="view zone">하이퍼링크 연습</a>
+                        </li>
+                        <li>
+                            <a href="week04_2.html" target="view zone">week04_2</a>
+                        </li>
+                        <li>
+                            <a href="week04_3.html" target="view zone">week04_3</a>
+                        </li>
+                        <li>
+                            <a href="http://daum.net" target="view zone">Daum</a>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <iframe width="100%" name="view zone" frameborder="1"></iframe>
+                </td>
+            </tr>
+    </table>
+</body>
+</html>

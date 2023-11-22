@@ -1,0 +1,44 @@
+a:link {
+    color: crimson;
+}
+a:active {
+    color: blueviolet;
+}
+a:visited {
+    color: rgb(0, 70, 128);
+    text-decoration: underline;
+}
+a:hover {
+    color: aqua;
+    position: relative;
+    left: 5px;
+    top: -5px;
+}
+.contanier {
+    display: flex;
+    justify-content: space-around;
+}
+table {
+    border-collapse: collapse;
+    width: 30%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background-color: #d6ffbb;
+}
+tr:nth-child(odd) {
+    background-color: rgb(233, 255, 218);
+}
+tr:nth-child(even) { 
+    background-color: rgb(238, 249, 253);
+}
+tr:hover {
+    position: relative;
+    top: -2px;
+    left: 2px;
+    box-shadow: 0px 0px 10px;
+}

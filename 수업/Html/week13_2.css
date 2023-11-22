@@ -1,0 +1,43 @@
+.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    padding: 10px;
+    background-color: rgb(226, 223, 255);
+    justify-content: space-around;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: rgb(255, 222, 222);
+    align-items: center;
+}
+.horizontal article {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: rgb(241, 241, 255);
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+}
+.vertical article {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: rgb(255, 244, 244);
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+}
+.horizontal dt {
+    margin-bottom: 10px;
+}
+.vertical dt {
+
+}
+dd {
+    margin-inline-start: 0px;
+    text-align: justify;
+}
