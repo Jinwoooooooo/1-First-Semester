@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    background-color: blueviolet;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+}
+nav {
+    background-color: yellow;
+    margin: 10px;
+    width: 100px;
+    height: 300px;
+    text-align: center;
+}
+section {
+    background-color:  blue;
+    margin: 10px;
+    text-align: center;
+    height: 300px;
+    width: 200px;
+
+}
+.contanier {
+    display: flex;
+}
+article {
+    background-color: crimson;
+    margin: 10px;
+    height: 50px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    background-color: aqua;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+}
